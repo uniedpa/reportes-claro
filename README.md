@@ -4,6 +4,7 @@ Extrae las facturas individuales del archivo PDF de la factura de cuentas corpor
 Requiere:
 
 - Sistema Unix/Linux, macOS, Windows con Cygwin o WSL
+- Locale es_PA.uf8 disponible
 - Cónsola con Bash
 - QPDF http://qpdf.sourceforge.net/
 - Pdfgrep https://pdfgrep.org/
