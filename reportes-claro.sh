@@ -8,13 +8,13 @@ if [ -z "$1" ]
 	    echo "Falta el nombre del archivo PDF del reporte de facturas"
 	    exit 1
 fi
-monthname=$(LC_ALL="es_ES" date "+%B")
+monthname=$(LC_ALL="es_PA.utf8" date "+%B")
 # monthname=${monthname^} #Bash ver. 4+
 # macOS High Sierra bash 3.2
 first=`echo $monthname|cut -c1|tr [a-z] [A-Z]`
 second=`echo $monthname|cut -c2-`
 monthname=$first$second
-year=$(LC_ALL="es_ES"; date "+%Y")
+year=$(LC_ALL="es_PA.utf8"; date "+%Y")
 declare -a account_array
 NL=$'\n'
 report=$1
